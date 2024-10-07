@@ -1,27 +1,36 @@
 <template>
-  <div id="app">
+  <div>
+    <CustomCard>
+      <h1>Title 1</h1>
+      <p>Some content for the first box.</p>
+    </CustomCard>
   </div>
-
 </template>
 
 <script>
+import CustomCard from './components/CustomCard.vue';
 
 export default {
-  name: 'App',
   components: {
-  }
-}
+    CustomCard,
+  },
+};
 </script>
 
 <style>
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 #app {
   min-height: 100vh;
-  width: 100vw;
   display: flex;
-  background: radial-gradient(71.11% 100% at 50% 0%, #020204 14.6%, #011F35 100%);
+  padding: 80px;
+  background: radial-gradient(
+    71.11% 100% at 50% 0%,
+    #020204 14.6%,
+    #011f35 100%
+  );
 }
 </style>
