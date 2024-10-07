@@ -17,7 +17,7 @@ export default {
   },
   async created() {
     try {
-      this.stockData = await stockService.getStockData();
+      this.stockData = await stockService.getRevenue();
     } catch (e) {
       this.error = 'Failed to load stock data';
     }
